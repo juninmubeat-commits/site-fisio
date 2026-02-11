@@ -17,6 +17,7 @@
 <body>
   
   <div id="mobile-menu-overlay" class="mobile-menu-overlay">
+    <div id="mobile-backdrop" class="mobile-backdrop"></div>
     <div class="mobile-menu-container">
       <div class="mobile-menu-header">
         <span class="logo-text-mobile">Menu</span>
@@ -33,7 +34,6 @@
         <a href="#agendamento" class="mobile-link">Contato</a>
       </nav>
     </div>
-    <div id="mobile-backdrop" class="mobile-backdrop"></div>
   </div>
 
   <header class="site-header">
@@ -63,6 +63,7 @@
 
   <section id="hero" class="hero-slider">
     <div class="hero-slider-inner">
+      
       <article class="hero-slide is-active">
         <div class="hero-content container">
             <div class="hero-text">
@@ -81,6 +82,11 @@
                   <a href="#agendamento" class="btn btn-primary">Agendar consulta</a>
                   <a href="#sobre" class="btn btn-outline">Conhecer a clínica</a>
                 </div>
+                <ul class="hero-highlights">
+                  <li><i class="fa-solid fa-check"></i> Fisioterapia ortopédica</li>
+                  <li><i class="fa-solid fa-check"></i> Reabilitação cirúrgica</li>
+                  <li><i class="fa-solid fa-check"></i> Pilates terapêutico</li>
+                </ul>
             </div>
             <div class="hero-media">
                 <div class="hero-main-card">
@@ -94,12 +100,15 @@
             </div>
         </div>
       </article>
+
       <article class="hero-slide">
         <div class="hero-content container">
             <div class="hero-text">
                 <span class="hero-badge">Sinais do corpo</span>
                 <h1>Seu bebê está tentando dizer algo...</h1>
-                <p class="hero-description">6 sinais que ajudam a identificar desconfortos precocemente.</p>
+                <p class="hero-description">
+                    6 sinais que ajudam a identificar desconfortos e necessidades de cuidado precocemente 👶🏼
+                </p>
                 <div class="doctor-signature">
                   <div class="doc-name">Dra. Paloma Castro</div>
                   <div class="doc-details">Fisioterapeuta • Crefito 327196-F</div>
@@ -108,6 +117,11 @@
                   <a href="#agendamento" class="btn btn-primary">Agendar consulta</a>
                   <a href="#sobre" class="btn btn-outline">Conhecer a clínica</a>
                 </div>
+                <ul class="hero-highlights">
+                  <li><i class="fa-solid fa-check"></i> Fisioterapia ortopédica</li>
+                  <li><i class="fa-solid fa-check"></i> Reabilitação cirúrgica</li>
+                  <li><i class="fa-solid fa-check"></i> Pilates terapêutico</li>
+                </ul>
             </div>
             <div class="hero-media">
                 <div class="hero-main-card">
@@ -121,12 +135,15 @@
             </div>
         </div>
       </article>
+
       <article class="hero-slide">
         <div class="hero-content container">
             <div class="hero-text">
                 <span class="hero-badge">Primeiros meses</span>
                 <h1>Cada detalhe importa.</h1>
-                <p class="hero-description">A avaliação osteopática precoce identifica tensões importantes.</p>
+                <p class="hero-description">
+                    A avaliação osteopática precoce identifica tensões que fazem toda a diferença no conforto.
+                </p>
                 <div class="doctor-signature">
                   <div class="doc-name">Dra. Paloma Castro</div>
                   <div class="doc-details">Fisioterapeuta • Crefito 327196-F</div>
@@ -135,6 +152,11 @@
                   <a href="#agendamento" class="btn btn-primary">Agendar consulta</a>
                   <a href="#sobre" class="btn btn-outline">Conhecer a clínica</a>
                 </div>
+                <ul class="hero-highlights">
+                  <li><i class="fa-solid fa-check"></i> Fisioterapia ortopédica</li>
+                  <li><i class="fa-solid fa-check"></i> Reabilitação cirúrgica</li>
+                  <li><i class="fa-solid fa-check"></i> Pilates terapêutico</li>
+                </ul>
             </div>
             <div class="hero-media">
                 <div class="hero-main-card">
@@ -149,10 +171,16 @@
         </div>
       </article>
     </div>
+
     <div class="slider-controls-wrapper">
-        <button class="hero-control hero-prev"><i class="fa-solid fa-arrow-left"></i></button>
-        <button class="hero-control hero-next"><i class="fa-solid fa-arrow-right"></i></button>
-    </div>
+      <button class="hero-control hero-prev" aria-label="Anterior">
+          <i class="fa-solid fa-angle-left"></i>
+      </button>
+      <button class="hero-control hero-next" aria-label="Próximo">
+          <i class="fa-solid fa-angle-right"></i>
+      </button>
+  </div>
+
   </section>
 
   <section id="sobre" class="section about-section">
@@ -170,10 +198,12 @@
       <div class="about-content">
         <span class="section-eyebrow">A Clínica</span>
         <h2>Fisioterapia baseada em evidências.</h2>
-        <p>A clínica da <strong>Dra. Paloma Castro</strong> une conhecimento técnico e ambiente acolhedor.</p>
+        <p>A clínica da <strong>Dra. Paloma Castro</strong> nasceu com o propósito de oferecer um cuidado completo em fisioterapia, unindo conhecimento técnico atualizado, escuta ativa e um ambiente acolhedor.</p>
+        <p>Cada pessoa é única: por isso, avaliamos sua rotina, histórico de saúde e objetivos para construir um plano de tratamento realmente personalizado, alinhado às suas necessidades e ao que é mais importante na sua vida.</p></p:>
         <ul class="about-list">
-          <li><i class="fa-solid fa-check"></i> Atendimento exclusivo</li>
           <li><i class="fa-solid fa-check"></i> Ambiente moderno</li>
+          <li><i class="fa-solid fa-check"></i> Atendimento exclusivo</li>
+          <li><i class="fa-solid fa-check"></i> Acompanhamento próximo da evolução e reavaliações periódicas</li>
         </ul>
         <a href="#agendamento" class="btn btn-primary" style="margin-top: 20px;">Agendar Avaliação</a>
       </div>
@@ -221,7 +251,8 @@
     </div>
   </section>
 
-  <section class="section cta-section">
+  <!-- DE OS PRIMEIROS PASSOS  -->
+  <!-- <section class="section cta-section">
     <div class="container cta-inner">
       <div class="cta-text">
         <h2>Dê o primeiro passo para se movimentar sem dor.</h2>
@@ -231,9 +262,10 @@
         <a href="https://wa.me/5599999999999" class="btn btn-outline">WhatsApp</a>
       </div>
     </div>
-  </section>
+  </section> -->
 
-  <section id="equipe" class="section team-section">
+  <!-- CORPO CLINICO  -->
+  <!-- <section id="equipe" class="section team-section">
     <div class="container">
       <header class="section-header"><h2>Corpo Clínico</h2></header>
       <div class="team-grid">
@@ -251,7 +283,7 @@
           </article>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <section id="depoimentos" class="section testimonials-section">
     <div class="container">
@@ -303,10 +335,6 @@
     <div class="container footer-inner">
       <div class="footer-column">
         <span class="logo-text-footer">Dra. Paloma Castro</span>
-        <div class="footer-social">
-          <a href="#"><i class="fa-brands fa-instagram"></i></a>
-          <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-        </div>
       </div>
       <div class="footer-column">
         <p>Rua Exemplo, 123 - Fortaleza/CE</p>
