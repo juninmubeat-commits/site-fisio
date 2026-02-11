@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <!-- Metadados básicos -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clínica de Fisioterapia | Dra. Mariana Costa</title>
+
+  <!-- Descrição para SEO -->
+  <meta name="description"
+    content="Clínica de fisioterapia especializada em reabilitação ortopédica, esportiva e pilates terapêutico em um ambiente acolhedor e moderno." />
+
+  <!-- Fonte similar à do template (Poppins + Roboto como exemplo) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+
+  <!-- Ícones (substitui ícones do template) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- CSS principal do projeto -->
+  <link rel="stylesheet" href="css/bckp.css" />
+</head>
+
+<body>
+  <!-- ================= HEADER / NAV ================= -->
+  <!-- Estrutura inspirada no Dialia: topo com logotipo, menu principal e botão CTA -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <!-- Logo -->
+      <a href="#topo" class="logo">
+        <!-- Logo em imagem (Logo.png na raiz do projeto) -->
+        <img src="Icone.png" alt="Clínica de Fisioterapia Mariana Costa" class="logo" />
+        <span class="logo-text">Dra. Paloma Castro</span>
+      </a>
+
+      <!-- Navegação principal -->
+      <nav class="main-nav" aria-label="Navegação principal">
+        <ul class="nav-list">
+          <li><a href="#hero">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#equipe">Equipe</a></li>
+          <li><a href="#depoimentos">Depoimentos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+
+      <!-- Botão CTA + menu mobile -->
+      <div class="header-actions">
+        <a href="#agendamento" class="btn btn-primary">Agendar consulta</a>
+        <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= HERO / SLIDER ================= -->
+  <!-- Slider simples com 3 slides, similar ao Dialia (sem plugin externo) -->
+  <section id="hero" class="hero-slider" aria-label="Destaques da clínica">
+    <div class="hero-slider-inner">
+      
+      <article class="hero-slide is-active">
+        <div class="hero-content container">
+            <div class="hero-text">
+                <span class="hero-badge">Bebê conforto: o que ninguém te conta</span>
+                <h1>Eu sei que parece confortável…</h1>
+                <p class="hero-description">
+                  Mas deixar o bebê por muito tempo no bebê conforto pode afetar a respiração, a digestão e até o formato da cabecinha.
+                  <br>
+                  <strong class="text-warning">Atenção ao tempo e ao uso ‼️</strong>
+                </p>
+                <div class="doctor-signature">
+                  <div class="doc-name">Dra. Paloma Castro <span class="doc-divider">|</span> Fisioterapeuta</div>
+                  <div class="doc-details">C.O em Osteopatia • Atendimento adulto e pediátrico</div>
+                  <div class="doc-crefito">Crefito 327196-F</div>
+                </div>
+                <div class="hero-actions">
+                  <a href="#agendamento" class="btn btn-primary">Agendar consulta</a>
+                  <a href="#sobre" class="btn btn-outline">Conhecer a clínica</a>
+                </div>
+                <ul class="hero-highlights">
+                  <li><i class="fa-solid fa-check"></i> Fisioterapia ortopédica e esportiva</li>
+                  <li><i class="fa-solid fa-check"></i> Reabilitação pós-cirúrgica</li>
+                  <li><i class="fa-solid fa-check"></i> Pilates terapêutico em estúdio</li>
+                </ul>
+            </div>
+            
+            <div class="hero-media">
+                <div class="hero-main-card">
+                    <div class="hero-main-image overlay-gradient">
+                        <video autoplay muted loop playsinline controls poster="assets/poster-1.jpg">
+                            <source src="Bebeconforto.mp4" type="video/mp4">
+                            Seu navegador não suporta vídeos.
+                        </video>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+      </article>
+
+      <article class="hero-slide">
+        <div class="hero-content container">
+            <div class="hero-text">
+                <span class="hero-badge">O corpo do bebê fala</span>
+                <h1>Seu bebê está tentando te dizer algo...</h1>
+                <p class="hero-description">
+                    Esses 6 sinais ajudam a identificar desconfortos e necessidades de cuidado precocemente 👶🏼
+                  <br>
+                </p>
+                <div class="doctor-signature">
+                  <div class="doc-name">Dra. Paloma Castro <span class="doc-divider">|</span> Fisioterapeuta</div>
+                  <div class="doc-details">C.O em Osteopatia • Atendimento adulto e pediátrico</div>
+                  <div class="doc-crefito">Crefito 327196-F</div>
+                </div>
+                <div class="hero-actions">
+                  <a href="#agendamento" class="btn btn-primary">Agendar consulta</a>
+                  <a href="#sobre" class="btn btn-outline">Conhecer a clínica</a>
+                </div>
+                <ul class="hero-highlights">
+                  <li><i class="fa-solid fa-check"></i> Fisioterapia ortopédica e esportiva</li>
+                  <li><i class="fa-solid fa-check"></i> Reabilitação pós-cirúrgica</li>
+                  <li><i class="fa-solid fa-check"></i> Pilates terapêutico em estúdio</li>
+                </ul>
+            </div>
+            
+            <div class="hero-media">
+                <div class="hero-main-card">
+                    <div class="hero-main-image overlay-gradient">
+                        <video autoplay muted loop playsinline controls poster="assets/poster-2.jpg">
+                            <source src="Ocorpodobebê.mp4" type="video/mp4">
+                            Seu navegador não suporta vídeos.
+                        </video>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+      </article>
+
+      <article class="hero-slide">
+        <div class="hero-content container">
+            <div class="hero-text">
+                <span class="hero-badge">Nos primeiros meses</span>
+                <h1>Cada detalhe importa.</h1>
+                <p class="hero-description">
+                    A avaliação osteopática precoce identifica tensões que o bebê ainda não sabe expressar e que fazem toda a diferença no conforto e desenvolvimento dele. 👶🏻
+                  <br>
+                </p>
+                <div class="doctor-signature">
+                  <div class="doc-name">Dra. Paloma Castro <span class="doc-divider">|</span> Fisioterapeuta</div>
+                  <div class="doc-details">C.O em Osteopatia • Atendimento adulto e pediátrico</div>
+                  <div class="doc-crefito">Crefito 327196-F</div>
+                </div>
+                <div class="hero-actions">
+                  <a href="#agendamento" class="btn btn-primary">Agendar consulta</a>
+                  <a href="#sobre" class="btn btn-outline">Conhecer a clínica</a>
+                </div>
+                <ul class="hero-highlights">
+                  <li><i class="fa-solid fa-check"></i> Fisioterapia ortopédica e esportiva</li>
+                  <li><i class="fa-solid fa-check"></i> Reabilitação pós-cirúrgica</li>
+                  <li><i class="fa-solid fa-check"></i> Pilates terapêutico em estúdio</li>
+                </ul>
+            </div>
+            
+            <div class="hero-media">
+                <div class="hero-main-card">
+                    <div class="hero-main-image overlay-gradient">
+                        <video autoplay muted loop playsinline controls poster="assets/poster-3.jpg">
+                            <source src="Nosprimeirosmeses.mp4" type="video/mp4">
+                            Seu navegador não suporta vídeos.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </article>
+    </div>
+
+    <button class="hero-control hero-prev" aria-label="Slide anterior">
+      <i class="fa-solid fa-angle-left"></i>
+    </button>
+    <button class="hero-control hero-next" aria-label="Próximo slide">
+      <i class="fa-solid fa-angle-right"></i>
+    </button>
+
+    <div class="hero-dots" role="tablist" aria-label="Seleção de slide">
+      <button class="hero-dot is-active" data-slide="0" aria-label="Slide 1"></button>
+      <button class="hero-dot" data-slide="1" aria-label="Slide 2"></button>
+      <button class="hero-dot" data-slide="2" aria-label="Slide 3"></button>
+    </div>
+</section>
+
+  <!-- ================= SEÇÃO SOBRE ================= -->
+  <section id="sobre" class="section about-section">
+    <div class="container about-inner">
+      
+      <div class="hero-media">
+        <div class="hero-main-card">
+          <div class="hero-main-image overlay-gradient">
+              
+              <video class="hero-video" autoplay muted loop playsinline poster="assets/poster-sobre.jpg">
+                  <source src="Atendendopaciente.mp4" type="video/mp4">
+                  Seu navegador não suporta vídeos.
+              </video>
+  
+              <button class="video-sound-toggle" aria-label="Ligar som">
+                  <i class="fa-solid fa-volume-xmark"></i>
+              </button>
+  
+          </div>
+        </div>
+      </div>
+  
+      <div class="about-content">
+        <!-- <span class="section-eyebrow">Sobre a clínica</span> -->
+        
+        <h2>Fisioterapia baseada em evidências, com olhar humano e individualizado.</h2>
+        
+        <p>
+          A clínica da <strong>Dra. Paloma Castro</strong> nasceu com o propósito de oferecer um cuidado completo em
+          fisioterapia, unindo conhecimento técnico atualizado, escuta ativa e um ambiente acolhedor.
+        </p>
+        
+        <p>
+          Cada pessoa é única: por isso, avaliamos sua rotina, histórico de saúde e objetivos para construir um plano
+          de tratamento realmente personalizado, alinhado às suas necessidades e ao que é mais importante na sua vida.
+        </p>
+        
+        <ul class="about-list">
+          <li><i class="fa-solid fa-circle-check"></i> Atendimento individualizado em consultório completo</li>
+          <li><i class="fa-solid fa-circle-check"></i> Comunicação clara em todas as etapas do tratamento</li>
+          <li><i class="fa-solid fa-circle-check"></i> Acompanhamento próximo da evolução e reavaliações periódicas</li>
+        </ul>
+        
+        <div class="about-meta">
+          <div class="about-meta-item">
+            <span class="meta-label">Crefito</span>
+            <span class="meta-text">327196-F</span>
+          </div>
+          <div class="about-meta-item">
+            <span class="meta-label">Especializações</span>
+            <span class="meta-text">Ortopedia, Esportiva, Coluna, Pilates Clínico</span>
+          </div>
+        </div>
+        
+        <div style="margin-top: 32px;">
+           <a href="#agendamento" class="btn btn-primary">Agendar minha avaliação</a>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SEÇÃO SERVIÇOS ================= -->
+  <section id="servicos" class="section services-section">
+    <div class="container">
+      <header class="section-header">
+        <span class="section-eyebrow">Tratamentos</span>
+        <h2>Serviços de fisioterapia pensados para cada fase da sua jornada.</h2>
+        <p>
+          Do alívio da dor à prevenção de novas lesões, oferecemos uma linha completa de cuidados para que você se
+          mova com segurança e confiança.
+        </p>
+      </header>
+
+      <!-- Grid de cards de serviço (quantidade similar ao template) -->
+      <div class="services-grid">
+        <!-- Card 1 -->
+        <article class="service-card">
+          <div class="service-icon">
+            <i class="fa-solid fa-person-walking-with-cane"></i>
+          </div>
+          <h3>Fisioterapia Ortopédica</h3>
+          <p>
+            Tratamento de dores articulares, musculares e lesões decorrentes de traumas ou sobrecarga, com foco em
+            restaurar a função e a qualidade de movimento.
+          </p>
+          <ul class="service-list">
+            <li>Avaliação postural e funcional completa</li>
+            <li>Fortalecimento e ganho de mobilidade</li>
+            <li>Prevenção de recidivas</li>
+          </ul>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="service-card">
+          <div class="service-icon">
+            <i class="fa-solid fa-medal"></i>
+          </div>
+          <h3>Fisioterapia Esportiva</h3>
+          <p>
+            Recuperação e prevenção de lesões em praticantes de atividade física, atletas amadores e profissionais,
+            respeitando as demandas do esporte.
+          </p>
+          <ul class="service-list">
+            <li>Retorno seguro ao esporte</li>
+            <li>Trabalho de estabilidade e performance</li>
+            <li>Orientação para treinos sem dor</li>
+          </ul>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="service-card">
+          <div class="service-icon">
+            <i class="fa-solid fa-hospital-user"></i>
+          </div>
+          <h3>Reabilitação Pós-Cirúrgica</h3>
+          <p>
+            Protocolos específicos para pós-operatório de joelho, ombro, quadril, coluna e outras cirurgias
+            ortopédicas, sempre alinhados à sua equipe médica.
+          </p>
+          <ul class="service-list">
+            <li>Controle de dor e edema</li>
+            <li>Recuperação de amplitude de movimento</li>
+            <li>Reforço muscular progressivo</li>
+          </ul>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="service-card">
+          <div class="service-icon">
+            <i class="fa-solid fa-child-reaching"></i>
+          </div>
+          <h3>RPG – Reeducação Postural Global</h3>
+          <p>
+            Método que trabalha o corpo como um todo para correção postural, alinhamento e alívio de dores crônicas
+            relacionadas à postura.
+          </p>
+          <ul class="service-list">
+            <li>Posturas específicas guiadas</li>
+            <li>Alongamentos globais</li>
+            <li>Conscientização corporal</li>
+          </ul>
+        </article>
+
+        <!-- Card 5 -->
+        <article class="service-card">
+          <div class="service-icon">
+            <i class="fa-solid fa-person-shelter"></i>
+          </div>
+          <h3>Pilates Terapêutico</h3>
+          <p>
+            Exercícios no solo e em equipamentos para fortalecimento global, foco em coluna, controle respiratório e
+            estabilidade.
+          </p>
+          <ul class="service-list">
+            <li>Aulas individuais ou em pequenos grupos</li>
+            <li>Indicado para dores crônicas e prevenção</li>
+            <li>Trabalho de equilíbrio e coordenação</li>
+          </ul>
+        </article>
+
+        <!-- Card 6 -->
+        <article class="service-card">
+          <div class="service-icon">
+            <i class="fa-solid fa-house-medical"></i>
+          </div>
+          <h3>Atendimento Domiciliar</h3>
+          <p>
+            Atendimento em casa para pacientes com mobilidade reduzida ou em recuperação, com toda a segurança e
+            estrutura necessária.
+          </p>
+          <ul class="service-list">
+            <li>Conforto e praticidade para o paciente</li>
+            <li>Planejamento adaptado ao ambiente</li>
+            <li>Comunicação direta com familiares</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CALL TO ACTION (AGENDAMENTO RÁPIDO) ================= -->
+  <section class="section cta-section">
+    <div class="container cta-inner">
+      <div class="cta-text">
+        <span class="section-eyebrow">Pronto para começar?</span>
+        <h2>Agende sua avaliação inicial e dê o primeiro passo para se movimentar sem dor.</h2>
+        <p>
+          Clique no botão ao lado para preencher seus dados ou, se preferir, chame diretamente pelo WhatsApp para tirar
+          dúvidas rápidas sobre o atendimento.
+        </p>
+      </div>
+      <div class="cta-actions">
+        <a href="#agendamento" class="btn btn-primary btn-lg">Agendar avaliação</a>
+        <a href="https://wa.me/5599999999999" target="_blank" class="btn btn-outline btn-icon">
+          <i class="fa-brands fa-whatsapp"></i>
+          Falar no WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SEÇÃO EQUIPE ================= -->
+  <section id="equipe" class="section team-section">
+    <div class="container">
+      <header class="section-header">
+        <span class="section-eyebrow">Equipe</span>
+        <h2>Profissionais comprometidos com sua evolução.</h2>
+        <p>
+          Uma equipe enxuta, integrada e em constante atualização para oferecer um atendimento acolhedor e baseado nas
+          melhores evidências científicas.
+        </p>
+      </header>
+
+      <div class="team-grid">
+        <!-- Card principal da fisioterapeuta -->
+        <article class="team-card team-card-main">
+          <div class="team-image-wrapper">
+            <img src="assets/fisioterapeuta-mariana.jpg" alt="Fisioterapeuta Dra. Mariana Costa" />
+            <div class="team-overlay">
+              <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="https://wa.me/5599999999999" target="_blank" aria-label="WhatsApp">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+            </div>
+          </div>
+          <div class="team-content">
+            <h3>Dra. Mariana Costa</h3>
+            <p class="team-role">Fisioterapeuta responsável técnica</p>
+            <p class="team-bio">
+              Fisioterapeuta com atuação focada em ortopedia, esportiva e coluna. Apaixonada por ajudar pessoas a
+              retomarem atividades simples do dia a dia com autonomia e confiança.
+            </p>
+            <ul class="team-tags">
+              <li>Ortopedia</li>
+              <li>Esportiva</li>
+              <li>Pilates clínico</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Outros profissionais / apoio -->
+        <article class="team-card">
+          <div class="team-image-wrapper">
+            <img src="assets/fisioterapeuta-equipe-1.jpg" alt="Fisioterapeuta da equipe" />
+            <div class="team-overlay">
+              <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+          <div class="team-content">
+            <h3>Dr. Rafael Lima</h3>
+            <p class="team-role">Fisioterapia Esportiva</p>
+            <p class="team-bio">
+              Especialista em reabilitação esportiva e retorno ao esporte para corredores, praticantes de academia e
+              atletas amadores.
+            </p>
+          </div>
+        </article>
+
+        <article class="team-card">
+          <div class="team-image-wrapper">
+            <img src="assets/fisioterapeuta-equipe-2.jpg" alt="Profissional da equipe" />
+            <div class="team-overlay">
+              <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+          <div class="team-content">
+            <h3>Ana Paula Souza</h3>
+            <p class="team-role">Pilates Terapêutico</p>
+            <p class="team-bio">
+              Instrutora de pilates com formação em fisioterapia, foco em fortalecimento global, coluna e prevenção de
+              dores.
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SEÇÃO DEPOIMENTOS (SLIDER) ================= -->
+  <section id="depoimentos" class="section testimonials-section">
+    <div class="container">
+      <header class="section-header">
+        <span class="section-eyebrow">Depoimentos</span>
+        <h2>Histórias reais de pessoas que voltaram a se movimentar com confiança.</h2>
+        <p>
+          Cada resultado é fruto de parceria, comprometimento e um plano de tratamento construído em conjunto.
+        </p>
+      </header>
+
+      <!-- Slider de depoimentos -->
+      <div class="testimonials-slider">
+        <div class="testimonials-track">
+          <!-- Depoimento 1 -->
+          <article class="testimonial-card is-active">
+            <p class="testimonial-text">
+              “Cheguei com muita dor no ombro após uma lesão na academia e já pensava em parar de treinar. Com o
+              tratamento,
+              voltei aos poucos e hoje consigo treinar sem medo, com muito mais consciência do meu corpo.”
+            </p>
+            <div class="testimonial-meta">
+              <div class="testimonial-avatar">
+                <img src="assets/depoimento-1.jpg" alt="Paciente em reabilitação" />
+              </div>
+              <div>
+                <h3>Fernanda Almeida</h3>
+                <span>Reabilitação de lesão no ombro</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Depoimento 2 -->
+          <article class="testimonial-card">
+            <p class="testimonial-text">
+              “Depois da cirurgia de joelho eu sentia insegurança até para caminhar. O plano de fisioterapia foi claro
+              desde o início,
+              e cada evolução era comemorada. Hoje voltei a caminhar no parque e a dirigir com tranquilidade.”
+            </p>
+            <div class="testimonial-meta">
+              <div class="testimonial-avatar">
+                <img src="assets/depoimento-2.jpg" alt="Paciente em pós-operatório de joelho" />
+              </div>
+              <div>
+                <h3>João Pedro Santos</h3>
+                <span>Pós-operatório de joelho</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Depoimento 3 -->
+          <article class="testimonial-card">
+            <p class="testimonial-text">
+              “Comecei o pilates terapêutico por conta de dores na lombar e hoje não lembro da última vez que precisei
+              tomar remédio.
+              Me sinto mais forte, mais estável e muito mais disposta no dia a dia.”
+            </p>
+            <div class="testimonial-meta">
+              <div class="testimonial-avatar">
+                <img src="assets/depoimento-3.jpg" alt="Paciente em aula de pilates" />
+              </div>
+              <div>
+                <h3>Cláudia Nunes</h3>
+                <span>Pilates terapêutico</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Controles do slider -->
+        <div class="testimonials-controls">
+          <button class="testimonials-prev" aria-label="Depoimento anterior">
+            <i class="fa-solid fa-angle-left"></i>
+          </button>
+          <button class="testimonials-next" aria-label="Próximo depoimento">
+            <i class="fa-solid fa-angle-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SEÇÃO AGENDAMENTO (FORMULÁRIO) ================= -->
+  <section id="agendamento" class="section booking-section">
+    <div class="container booking-inner">
+      <div class="booking-info">
+        <span class="section-eyebrow">Agendamento</span>
+        <h2>Agende sua consulta de forma rápida e segura.</h2>
+        <p>
+          Preencha o formulário ao lado com seus dados e preferência de horário. Entraremos em contato para confirmar a
+          disponibilidade e finalizar o agendamento.
+        </p>
+        <ul class="booking-benefits">
+          <li><i class="fa-solid fa-clock"></i> Retorno em até 1 dia útil</li>
+          <li><i class="fa-solid fa-location-dot"></i> Clínica próxima ao metrô (exemplo)</li>
+          <li><i class="fa-solid fa-phone"></i> Atendimento também via WhatsApp</li>
+        </ul>
+      </div>
+
+      <!-- Formulário de agendamento -->
+      <div class="booking-form-wrapper" id="contato">
+        <form id="form-agendamento" class="booking-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nome">Nome completo</label>
+              <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required />
+              <span class="form-error" data-error-for="nome"></span>
+            </div>
+            <div class="form-group">
+              <label for="telefone">Telefone / WhatsApp</label>
+              <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required />
+              <span class="form-error" data-error-for="telefone"></span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required />
+              <span class="form-error" data-error-for="email"></span>
+            </div>
+            <div class="form-group">
+              <label for="tipo-atendimento">Tipo de atendimento</label>
+              <select id="tipo-atendimento" name="tipo-atendimento" required>
+                <option value="">Selecione uma opção</option>
+                <option value="ortopedica">Fisioterapia Ortopédica</option>
+                <option value="esportiva">Fisioterapia Esportiva</option>
+                <option value="pos-cirurgica">Reabilitação Pós-Cirúrgica</option>
+                <option value="rpg">RPG – Reeducação Postural Global</option>
+                <option value="pilates">Pilates Terapêutico</option>
+                <option value="domiciliar">Atendimento Domiciliar</option>
+              </select>
+              <span class="form-error" data-error-for="tipo-atendimento"></span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="data">Data desejada</label>
+              <input type="date" id="data" name="data" required />
+              <span class="form-error" data-error-for="data"></span>
+            </div>
+            <div class="form-group">
+              <label for="horario">Horário preferencial</label>
+              <input type="time" id="horario" name="horario" required />
+              <span class="form-error" data-error-for="horario"></span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="4"
+              placeholder="Compartilhe brevemente seu caso, dores atuais ou objetivo com o tratamento."></textarea>
+            <span class="form-error" data-error-for="mensagem"></span>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-full">Agendar consulta</button>
+          <p class="form-success-message" id="mensagem-sucesso" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-column">
+        <a href="#topo" class="logo footer-logo">
+          <span class="logo-mark">Fisio</span>
+          <span class="logo-text">Mariana Costa</span>
+        </a>
+        <p>
+          Fisioterapia acolhedora, atualizada e focada em devolver o movimento com segurança, respeito ao seu tempo e
+          muita escuta.
+        </p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="https://wa.me/5599999999999" target="_blank" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <h3>Contato</h3>
+        <ul class="footer-list">
+          <li>
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Rua Exemplo, 123 - Bairro Central<br />Cidade • UF</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:5599999999999">(55) 9 9999-9999</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:contato@fisiomarianacosta.com.br">contato@fisiomarianacosta.com.br</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Horários de atendimento</h3>
+        <ul class="footer-list">
+          <li>Segunda a sexta: 8h às 20h</li>
+          <li>Sábado: 8h às 12h (com agendamento)</li>
+          <li>Atendimento domiciliar sob consulta</li>
+        </ul>
+        <a href="#agendamento" class="btn btn-outline btn-sm footer-cta">Agendar consulta</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; <span id="ano-atual"></span> Clínica de Fisioterapia Mariana Costa. Todos os direitos reservados.
+        </p>
+        <p>Site institucional desenvolvido para uso profissional em fisioterapia.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS principal -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
+
+

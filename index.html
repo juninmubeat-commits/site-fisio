@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Dra. Paloma Castro | Fisioterapia Especializada</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  
+  <div id="mobile-menu-overlay" class="mobile-menu-overlay">
+    <div class="mobile-menu-container">
+      <div class="mobile-menu-header">
+        <span class="logo-text-mobile">Menu</span>
+        <button id="close-menu-btn" class="icon-btn">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <nav class="mobile-nav">
+        <a href="#hero" class="mobile-link">Início</a>
+        <a href="#sobre" class="mobile-link">A Clínica</a>
+        <a href="#servicos" class="mobile-link">Tratamentos</a>
+        <a href="#equipe" class="mobile-link">Equipe</a>
+        <a href="#depoimentos" class="mobile-link">Resultados</a>
+        <a href="#agendamento" class="mobile-link">Contato</a>
+      </nav>
+    </div>
+    <div id="mobile-backdrop" class="mobile-backdrop"></div>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#hero" class="logo">
+        <img src="Icone.png" alt="Dra. Paloma Castro" class="logo-image" />
+        <span class="logo-text">Dra. Paloma Castro</span>
+      </a>
+
+      <nav class="desktop-nav">
+        <a href="#hero">Início</a>
+        <a href="#sobre">A Clínica</a>
+        <a href="#servicos">Tratamentos</a>
+        <a href="#equipe">Equipe</a>
+        <a href="#depoimentos">Resultados</a>
+        <a href="#agendamento">Contato</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#agendamento" class="btn btn-primary btn-header-cta">Agendar</a>
+        <button id="open-menu-btn" class="icon-btn nav-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section id="hero" class="hero-slider">
+    <div class="hero-slider-inner">
+      <article class="hero-slide is-active">
+        <div class="hero-content container">
+            <div class="hero-text">
+                <span class="hero-badge">Bebê conforto</span>
+                <h1>Eu sei que parece confortável…</h1>
+                <p class="hero-description">
+                  Mas deixar o bebê por muito tempo no bebê conforto pode afetar a respiração e a digestão.
+                  <br>
+                  <strong class="text-warning">Atenção ao tempo e ao uso ‼️</strong>
+                </p>
+                <div class="doctor-signature">
+                  <div class="doc-name">Dra. Paloma Castro</div>
+                  <div class="doc-details">Fisioterapeuta • Crefito 327196-F</div>
+                </div>
+                <div class="hero-actions">
+                  <a href="#agendamento" class="btn btn-primary">Agendar consulta</a>
+                  <a href="#sobre" class="btn btn-outline">Conhecer a clínica</a>
+                </div>
+            </div>
+            <div class="hero-media">
+                <div class="hero-main-card">
+                    <div class="hero-main-image">
+                        <video class="hero-video" autoplay muted loop playsinline poster="assets/poster-1.jpg">
+                            <source src="Bebeconforto.mp4" type="video/mp4">
+                        </video>
+                        <button class="video-sound-toggle"><i class="fa-solid fa-volume-xmark"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </article>
+      <article class="hero-slide">
+        <div class="hero-content container">
+            <div class="hero-text">
+                <span class="hero-badge">Sinais do corpo</span>
+                <h1>Seu bebê está tentando dizer algo...</h1>
+                <p class="hero-description">6 sinais que ajudam a identificar desconfortos precocemente.</p>
+                <div class="doctor-signature">
+                  <div class="doc-name">Dra. Paloma Castro</div>
+                  <div class="doc-details">Fisioterapeuta • Crefito 327196-F</div>
+                </div>
+                <div class="hero-actions">
+                  <a href="#agendamento" class="btn btn-primary">Agendar consulta</a>
+                  <a href="#sobre" class="btn btn-outline">Conhecer a clínica</a>
+                </div>
+            </div>
+            <div class="hero-media">
+                <div class="hero-main-card">
+                    <div class="hero-main-image">
+                        <video class="hero-video" autoplay muted loop playsinline poster="assets/poster-2.jpg">
+                            <source src="Ocorpodobebê.mp4" type="video/mp4">
+                        </video>
+                        <button class="video-sound-toggle"><i class="fa-solid fa-volume-xmark"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </article>
+      <article class="hero-slide">
+        <div class="hero-content container">
+            <div class="hero-text">
+                <span class="hero-badge">Primeiros meses</span>
+                <h1>Cada detalhe importa.</h1>
+                <p class="hero-description">A avaliação osteopática precoce identifica tensões importantes.</p>
+                <div class="doctor-signature">
+                  <div class="doc-name">Dra. Paloma Castro</div>
+                  <div class="doc-details">Fisioterapeuta • Crefito 327196-F</div>
+                </div>
+                <div class="hero-actions">
+                  <a href="#agendamento" class="btn btn-primary">Agendar consulta</a>
+                  <a href="#sobre" class="btn btn-outline">Conhecer a clínica</a>
+                </div>
+            </div>
+            <div class="hero-media">
+                <div class="hero-main-card">
+                    <div class="hero-main-image">
+                        <video class="hero-video" autoplay muted loop playsinline poster="assets/poster-3.jpg">
+                            <source src="Nosprimeirosmeses.mp4" type="video/mp4">
+                        </video>
+                        <button class="video-sound-toggle"><i class="fa-solid fa-volume-xmark"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </article>
+    </div>
+    <div class="slider-controls-wrapper">
+        <button class="hero-control hero-prev"><i class="fa-solid fa-arrow-left"></i></button>
+        <button class="hero-control hero-next"><i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+  </section>
+
+  <section id="sobre" class="section about-section">
+    <div class="container about-inner">
+      <div class="hero-media">
+        <div class="hero-main-card">
+          <div class="hero-main-image">
+              <video class="hero-video" autoplay muted loop playsinline poster="assets/poster-sobre.jpg">
+                  <source src="Atendendopaciente.mp4" type="video/mp4">
+              </video>
+              <button class="video-sound-toggle"><i class="fa-solid fa-volume-xmark"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="about-content">
+        <span class="section-eyebrow">A Clínica</span>
+        <h2>Fisioterapia baseada em evidências.</h2>
+        <p>A clínica da <strong>Dra. Paloma Castro</strong> une conhecimento técnico e ambiente acolhedor.</p>
+        <ul class="about-list">
+          <li><i class="fa-solid fa-check"></i> Atendimento exclusivo</li>
+          <li><i class="fa-solid fa-check"></i> Ambiente moderno</li>
+        </ul>
+        <a href="#agendamento" class="btn btn-primary" style="margin-top: 20px;">Agendar Avaliação</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="servicos" class="section services-section">
+    <div class="container">
+      <header class="section-header">
+        <span class="section-eyebrow">Expertise</span>
+        <h2>Cuidados especializados.</h2>
+      </header>
+      <div class="services-grid">
+        <article class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-person-walking-with-cane"></i></div>
+          <h3>Ortopedia</h3>
+          <p>Reabilitação de dores e lesões.</p>
+        </article>
+        <article class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-medal"></i></div>
+          <h3>Esportiva</h3>
+          <p>Prevenção e performance.</p>
+        </article>
+        <article class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-hospital-user"></i></div>
+          <h3>Pós-Operatório</h3>
+          <p>Recuperação segura de cirurgias.</p>
+        </article>
+        <article class="service-card">
+            <div class="service-icon"><i class="fa-solid fa-child-reaching"></i></div>
+            <h3>RPG</h3>
+            <p>Reeducação Postural Global.</p>
+        </article>
+        <article class="service-card">
+            <div class="service-icon"><i class="fa-solid fa-person-shelter"></i></div>
+            <h3>Pilates</h3>
+            <p>Fortalecimento e controle.</p>
+        </article>
+        <article class="service-card">
+            <div class="service-icon"><i class="fa-solid fa-house-medical"></i></div>
+            <h3>Domiciliar</h3>
+            <p>Atendimento em casa.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cta-section">
+    <div class="container cta-inner">
+      <div class="cta-text">
+        <h2>Dê o primeiro passo para se movimentar sem dor.</h2>
+      </div>
+      <div class="cta-actions">
+        <a href="#agendamento" class="btn btn-primary">Agendar Agora</a>
+        <a href="https://wa.me/5599999999999" class="btn btn-outline">WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="equipe" class="section team-section">
+    <div class="container">
+      <header class="section-header"><h2>Corpo Clínico</h2></header>
+      <div class="team-grid">
+        <article class="team-card team-card-main">
+          <div class="team-image-wrapper"><img src="assets/fisioterapeuta-mariana.jpg" alt="Dra. Paloma" /></div>
+          <div class="team-content"><h3>Dra. Paloma Castro</h3><p class="team-role">Responsável Técnica</p></div>
+        </article>
+        <article class="team-card">
+          <div class="team-image-wrapper"><img src="assets/fisioterapeuta-equipe-1.jpg" alt="Dr. Rafael" /></div>
+          <div class="team-content"><h3>Dr. Rafael Lima</h3><p class="team-role">Esportiva</p></div>
+        </article>
+        <article class="team-card">
+            <div class="team-image-wrapper"><img src="assets/fisioterapeuta-equipe-2.jpg" alt="Ana Paula" /></div>
+            <div class="team-content"><h3>Ana Paula Souza</h3><p class="team-role">Pilates</p></div>
+          </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="depoimentos" class="section testimonials-section">
+    <div class="container">
+      <header class="section-header"><h2>Resultados</h2></header>
+      <div class="testimonials-slider">
+        <div class="testimonials-track">
+          <article class="testimonial-card is-active">
+            <p class="testimonial-text">“Cheguei com muita dor e hoje treino sem medo.”</p>
+            <div class="testimonial-meta"><h3>Fernanda Almeida</h3><span>Lesão no ombro</span></div>
+          </article>
+          <article class="testimonial-card">
+            <p class="testimonial-text">“Profissional incrível, ambiente maravilhoso.”</p>
+            <div class="testimonial-meta"><h3>João Pedro</h3><span>Pós-operatório</span></div>
+          </article>
+        </div>
+        <div class="testimonials-controls">
+            <button class="testimonials-prev"><i class="fa-solid fa-angle-left"></i></button>
+            <button class="testimonials-next"><i class="fa-solid fa-angle-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="agendamento" class="section booking-section">
+    <div class="container booking-inner">
+      <div class="booking-info">
+        <h2>Agende sua consulta.</h2>
+        <p>Preencha os dados abaixo.</p>
+      </div>
+      <div class="booking-form-wrapper">
+        <form id="form-agendamento" class="booking-form">
+          <div class="form-group"><label>Nome</label><input type="text" required /></div>
+          <div class="form-group"><label>Telefone</label><input type="tel" required /></div>
+          <div class="form-group"><label>Interesse</label>
+             <select required>
+                <option value="">Selecione...</option>
+                <option value="ortopedica">Ortopedia</option>
+                <option value="esportiva">Esportiva</option>
+                <option value="pilates">Pilates</option>
+             </select>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Solicitar Horário</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-column">
+        <span class="logo-text-footer">Dra. Paloma Castro</span>
+        <div class="footer-social">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="footer-column">
+        <p>Rua Exemplo, 123 - Fortaleza/CE</p>
+      </div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2024 Dra. Paloma Castro.</p></div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
