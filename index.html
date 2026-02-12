@@ -62,8 +62,17 @@
   </header>
 
   <section id="hero" class="hero-slider">
+    
+    <div class="slider-controls-wrapper">
+        <button class="hero-control hero-prev" aria-label="Anterior">
+            <i class="fa-solid fa-angle-left"></i>
+        </button>
+        <button class="hero-control hero-next" aria-label="Próximo">
+            <i class="fa-solid fa-angle-right"></i>
+        </button>
+    </div>
+
     <div class="hero-slider-inner">
-      
       <article class="hero-slide is-active">
         <div class="hero-content container">
             <div class="hero-text">
@@ -91,6 +100,7 @@
             <div class="hero-media">
                 <div class="hero-main-card">
                     <div class="hero-main-image">
+                        <span class="video-overlay-label">Bebê Conforto</span>
                         <video class="hero-video" autoplay muted loop playsinline poster="assets/poster-1.jpg">
                             <source src="Bebeconforto.mp4" type="video/mp4">
                         </video>
@@ -126,6 +136,7 @@
             <div class="hero-media">
                 <div class="hero-main-card">
                     <div class="hero-main-image">
+                        <span class="video-overlay-label">Sinais do Corpo</span>
                         <video class="hero-video" autoplay muted loop playsinline poster="assets/poster-2.jpg">
                             <source src="Ocorpodobebê.mp4" type="video/mp4">
                         </video>
@@ -161,6 +172,7 @@
             <div class="hero-media">
                 <div class="hero-main-card">
                     <div class="hero-main-image">
+                        <span class="video-overlay-label">Primeiros Meses</span>
                         <video class="hero-video" autoplay muted loop playsinline poster="assets/poster-3.jpg">
                             <source src="Nosprimeirosmeses.mp4" type="video/mp4">
                         </video>
@@ -171,16 +183,6 @@
         </div>
       </article>
     </div>
-
-    <div class="slider-controls-wrapper">
-      <button class="hero-control hero-prev" aria-label="Anterior">
-          <i class="fa-solid fa-angle-left"></i>
-      </button>
-      <button class="hero-control hero-next" aria-label="Próximo">
-          <i class="fa-solid fa-angle-right"></i>
-      </button>
-  </div>
-
   </section>
 
   <section id="sobre" class="section about-section">
@@ -198,12 +200,10 @@
       <div class="about-content">
         <span class="section-eyebrow">A Clínica</span>
         <h2>Fisioterapia baseada em evidências.</h2>
-        <p>A clínica da <strong>Dra. Paloma Castro</strong> nasceu com o propósito de oferecer um cuidado completo em fisioterapia, unindo conhecimento técnico atualizado, escuta ativa e um ambiente acolhedor.</p>
-        <p>Cada pessoa é única: por isso, avaliamos sua rotina, histórico de saúde e objetivos para construir um plano de tratamento realmente personalizado, alinhado às suas necessidades e ao que é mais importante na sua vida.</p></p:>
+        <p>A clínica da <strong>Dra. Paloma Castro</strong> une conhecimento técnico e ambiente acolhedor.</p>
         <ul class="about-list">
-          <li><i class="fa-solid fa-check"></i> Ambiente moderno</li>
           <li><i class="fa-solid fa-check"></i> Atendimento exclusivo</li>
-          <li><i class="fa-solid fa-check"></i> Acompanhamento próximo da evolução e reavaliações periódicas</li>
+          <li><i class="fa-solid fa-check"></i> Ambiente moderno</li>
         </ul>
         <a href="#agendamento" class="btn btn-primary" style="margin-top: 20px;">Agendar Avaliação</a>
       </div>
@@ -251,7 +251,6 @@
     </div>
   </section>
 
-  <!-- DE OS PRIMEIROS PASSOS  -->
   <!-- <section class="section cta-section">
     <div class="container cta-inner">
       <div class="cta-text">
@@ -259,12 +258,11 @@
       </div>
       <div class="cta-actions">
         <a href="#agendamento" class="btn btn-primary">Agendar Agora</a>
-        <a href="https://wa.me/5599999999999" class="btn btn-outline">WhatsApp</a>
+        <a href="https://wa.me/558594465035" class="btn btn-outline">WhatsApp</a>
       </div>
     </div>
   </section> -->
 
-  <!-- CORPO CLINICO  -->
   <!-- <section id="equipe" class="section team-section">
     <div class="container">
       <header class="section-header"><h2>Corpo Clínico</h2></header>
@@ -287,18 +285,30 @@
 
   <section id="depoimentos" class="section testimonials-section">
     <div class="container">
-      <header class="section-header"><h2>Resultados</h2></header>
+      <header class="section-header">
+        <span class="section-eyebrow">Transformações</span>
+        <h2>Resultados Reais</h2>
+      </header>
+      
       <div class="testimonials-slider">
-        <div class="testimonials-track">
-          <article class="testimonial-card is-active">
-            <p class="testimonial-text">“Cheguei com muita dor e hoje treino sem medo.”</p>
-            <div class="testimonial-meta"><h3>Fernanda Almeida</h3><span>Lesão no ombro</span></div>
+        <div class="testimonials-track scrolling-track">
+          <article class="testimonial-card">
+            <img src="01.jpeg" alt="Resultado 1" class="testimonial-image">
           </article>
           <article class="testimonial-card">
-            <p class="testimonial-text">“Profissional incrível, ambiente maravilhoso.”</p>
-            <div class="testimonial-meta"><h3>João Pedro</h3><span>Pós-operatório</span></div>
+            <img src="02.jpeg" alt="Resultado 2" class="testimonial-image">
+          </article>
+          <article class="testimonial-card">
+            <img src="03.jpeg" alt="Resultado 3" class="testimonial-image">
+          </article>
+          <article class="testimonial-card">
+            <img src="04.jpeg" alt="Resultado 4" class="testimonial-image">
+          </article>
+          <article class="testimonial-card">
+            <img src="05.jpeg" alt="Resultado 5" class="testimonial-image">
           </article>
         </div>
+        
         <div class="testimonials-controls">
             <button class="testimonials-prev"><i class="fa-solid fa-angle-left"></i></button>
             <button class="testimonials-next"><i class="fa-solid fa-angle-right"></i></button>
@@ -310,21 +320,39 @@
   <section id="agendamento" class="section booking-section">
     <div class="container booking-inner">
       <div class="booking-info">
-        <h2>Agende sua consulta.</h2>
-        <p>Preencha os dados abaixo.</p>
+        <span class="section-eyebrow">Agendamento</span>
+        <h2>Agende sua consulta de forma rápida e segura.</h2>
+        <p>Preencha o formulário ao lado com seus dados e preferência de horário. Entraremos em contato para confirmar a disponibilidade e finalizar o agendamento.</p>
+        
+        <ul class="booking-benefits">
+          <li><i class="fa-solid fa-clock"></i> Retorno em até 1 dia útil</li>
+          <li><i class="fa-solid fa-location-dot"></i> Clínica próxima ao metrô (exemplo)</li>
+          <li><i class="fa-brands fa-whatsapp"></i> Atendimento também via WhatsApp</li>
+        </ul>
       </div>
+
       <div class="booking-form-wrapper">
         <form id="form-agendamento" class="booking-form">
-          <div class="form-group"><label>Nome</label><input type="text" required /></div>
-          <div class="form-group"><label>Telefone</label><input type="tel" required /></div>
-          <div class="form-group"><label>Interesse</label>
-             <select required>
-                <option value="">Selecione...</option>
-                <option value="ortopedica">Ortopedia</option>
-                <option value="esportiva">Esportiva</option>
-                <option value="pilates">Pilates</option>
+          <div class="form-group">
+            <label>Nome</label>
+            <input type="text" id="input-nome" placeholder="Digite seu nome" required />
+          </div>
+          
+          <div class="form-group">
+            <label>Telefone</label>
+            <input type="tel" id="input-telefone" placeholder="(00) 00000-0000" required />
+          </div>
+          
+          <div class="form-group">
+            <label>Interesse</label>
+            <select id="input-interesse" required>
+                <option value="Ortopedia">Ortopedia</option>
+                <option value="Esportiva">Esportiva</option>
+                <option value="Pilates">Pilates</option>
+                <option value="Outros">Outros</option>
              </select>
           </div>
+          
           <button type="submit" class="btn btn-primary btn-full">Solicitar Horário</button>
         </form>
       </div>
@@ -333,14 +361,39 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <div class="footer-column">
-        <span class="logo-text-footer">Dra. Paloma Castro</span>
+      <div class="footer-column brand-column">
+        <a href="#hero" class="footer-brand-wrapper">
+            <img src="Icone.png" alt="Dra. Paloma Castro" class="footer-brand-icon" />
+            <span class="footer-brand-text">Dra. Paloma Castro</span>
+        </a>
+        <p class="footer-description">
+          Fisioterapia acolhedora e atualizada, focada em devolver o movimento com segurança e respeito ao seu tempo.
+        </p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
       </div>
       <div class="footer-column">
-        <p>Rua Exemplo, 123 - Fortaleza/CE</p>
+        <h3>Contato</h3>
+        <ul class="footer-contact-list">
+          <li><i class="fa-solid fa-location-dot"></i><span>Rua Exemplo, 123<br>Fortaleza - CE</span></li>
+          <li><i class="fa-solid fa-phone"></i><span>(85) 9 9446-5035</span></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Atendimento</h3>
+        <ul class="footer-hours-list">
+          <li>Seg a Sex: 8h às 20h</li>
+          <li>Sáb: 8h às 12h</li>
+        </ul>
       </div>
     </div>
-    <div class="footer-bottom"><p>&copy; 2024 Dra. Paloma Castro.</p></div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; 2024 Dra. Paloma Castro. Todos os direitos reservados.</p>
+      </div>
+    </div>
   </footer>
 
   <script src="js/main.js"></script>

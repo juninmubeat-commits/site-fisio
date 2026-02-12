@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
         link.addEventListener('click', closeMenu);
     });
 
-    /* === SLIDER (SEM BOLINHAS) === */
+    /* === SLIDER HERO (VÍDEO) === */
     const slides = document.querySelectorAll('.hero-slide');
     const prevBtn = document.querySelector('.hero-prev');
     const nextBtn = document.querySelector('.hero-next');
@@ -62,7 +62,26 @@ document.addEventListener('DOMContentLoaded', () => {
         updateSlide(index);
     });
 
-    /* === SOM === */
+    /* === GALERIA RESULTADOS (ROLAGEM HORIZONTAL) === */
+    const track = document.querySelector('.scrolling-track');
+    const testPrev = document.querySelector('.testimonials-prev');
+    const testNext = document.querySelector('.testimonials-next');
+
+    if (track && testNext && testPrev) {
+        testNext.addEventListener('click', () => {
+            const cardWidth = track.querySelector('.testimonial-card').offsetWidth;
+            const gap = 20; 
+            track.scrollBy({ left: cardWidth + gap, behavior: 'smooth' });
+        });
+
+        testPrev.addEventListener('click', () => {
+            const cardWidth = track.querySelector('.testimonial-card').offsetWidth;
+            const gap = 20;
+            track.scrollBy({ left: -(cardWidth + gap), behavior: 'smooth' });
+        });
+    }
+
+    /* === SOM DO VIDEO === */
     const soundBtns = document.querySelectorAll('.video-sound-toggle');
     soundBtns.forEach(btn => {
         btn.addEventListener('click', function(e) {
@@ -75,4 +94,32 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    /* === ENVIO PARA WHATSAPP === */
+    const contactForm = document.getElementById('form-agendamento');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // Pega os valores
+            const nome = document.getElementById('input-nome').value;
+            const telefone = document.getElementById('input-telefone').value;
+            const interesse = document.getElementById('input-interesse').value;
+            
+            // Número com código do país (Brasil = 55)
+            const numeroWhatsApp = "558594465035";
+
+            // Monta a mensagem
+            const mensagem = `Olá, Dra. Paloma! Gostaria de agendar uma consulta.\n\n` +
+                             `*Nome:* ${nome}\n` +
+                             `*Telefone:* ${telefone}\n` +
+                             `*Interesse:* ${interesse}`;
+
+            // Cria o link
+            const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensagem)}`;
+
+            // Abre
+            window.open(url, '_blank');
+        });
+    }
 });
