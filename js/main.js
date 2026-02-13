@@ -41,7 +41,13 @@ document.addEventListener('DOMContentLoaded', () => {
         slides.forEach(s => {
             s.classList.remove('is-active');
             const v = s.querySelector('video');
-            if(v) v.pause();
+            if(v) {
+                v.pause();
+                // Silencia o vídeo ao sair do slide
+                v.muted = true;
+                const icon = s.querySelector('.video-sound-toggle i');
+                if(icon) icon.className = 'fa-solid fa-volume-xmark';
+            }
         });
 
         slides[n].classList.add('is-active');
@@ -81,16 +87,37 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    /* === SOM DO VIDEO === */
+    /* === SOM DO VIDEO (UM POR VEZ) === */
     const soundBtns = document.querySelectorAll('.video-sound-toggle');
+    const allVideos = document.querySelectorAll('video');
+
     soundBtns.forEach(btn => {
         btn.addEventListener('click', function(e) {
             e.stopPropagation();
             const vid = this.parentElement.querySelector('video');
             const icon = this.querySelector('i');
+            
             if (vid) {
-                vid.muted = !vid.muted;
-                icon.className = vid.muted ? 'fa-solid fa-volume-xmark' : 'fa-solid fa-volume-high';
+                if (vid.muted) {
+                    // Silencia todos os outros vídeos
+                    allVideos.forEach(otherVid => {
+                        if (otherVid !== vid) {
+                            otherVid.muted = true;
+                            const otherIcon = otherVid.parentElement.querySelector('.video-sound-toggle i');
+                            if (otherIcon) {
+                                otherIcon.className = 'fa-solid fa-volume-xmark';
+                            }
+                        }
+                    });
+
+                    // Ativa o som do vídeo clicado
+                    vid.muted = false;
+                    icon.className = 'fa-solid fa-volume-high';
+                } else {
+                    // Muta o vídeo atual
+                    vid.muted = true;
+                    icon.className = 'fa-solid fa-volume-xmark';
+                }
             }
         });
     });

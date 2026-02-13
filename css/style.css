@@ -1,5 +1,6 @@
 /* =========================================================
    ESTILOS | DRA. PALOMA CASTRO
+   Fix: Centralização perfeita do Logo no Mobile
    ========================================================= */
 
    *, *::before, *::after { box-sizing: border-box; }
@@ -201,6 +202,7 @@
    .booking-benefits li { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; color: var(--color-text); }
    .booking-benefits i { color: var(--color-accent); }
    
+   /* FOOTER */
    .site-footer { background-color: #1A1A1A; color: #999; padding-top: 80px; font-size: 14px; }
    .footer-inner { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 50px; padding-bottom: 60px; }
    .footer-brand-wrapper { display: flex; align-items: center; gap: 15px; text-decoration: none; margin-bottom: 25px; }
@@ -234,7 +236,16 @@
        .nav-toggle { display: block; }
        .btn-header-cta { display: none; }
        .services-grid, .team-grid, .footer-inner { grid-template-columns: 1fr; }
-       .footer-brand-wrapper { justify-content: center; }
+       
+       /* AQUI ESTÁ A CORREÇÃO DE CENTRALIZAÇÃO DO FOOTER MOBILE */
+       .footer-brand-wrapper { 
+           justify-content: center; 
+           flex-direction: column; /* Coloca o ícone em cima e o texto embaixo */
+           gap: 8px; /* Ajusta o espaço entre a logo e o nome */
+       }
+       .footer-brand-text { margin-top: 0; text-align: center; }
+       /* FIM DA CORREÇÃO DO FOOTER */
+   
        .footer-description, .footer-social, .footer-contact-list li, .footer-hours-list li { justify-content: center; margin-left: auto; margin-right: auto; text-align: center;}
        .hero-text h1 { font-size: 34px; }
        .section { padding: 60px 0; }
